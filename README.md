@@ -19,7 +19,7 @@ Make sure you already installed virtual environment for django in your computer.
 git clone https://github.com/ajiejot/django-reactjs-boilerplate.git
 cd django-reactjs-boilerplate
 virtualenv environment
-environment\scripts\activate
+source environment\bin\activate
 pip install -r requirements.txt
 npm install
 python manage.py runserver
