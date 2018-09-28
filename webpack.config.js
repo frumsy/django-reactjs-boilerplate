@@ -28,10 +28,14 @@ module.exports = {
 
   module: {
     loaders: [
-      // we pass the output from babel loader to react-hot loader
-      { test: /\.jsx?$/, exclude: /node_modules/, 
-        loaders: ['react-hot-loader/webpack', 'babel?' + JSON.stringify({presets: ['react', 'es2015']})]
+    // This is used to help webpack correctly use image loader plugin to load ima    ges to react-bootstrap:
+    { test: /\.(png|jpg|gif)$/, 
+        loader: 'file-loader?name=./images/[name].[ext]'
+    },
     
+    // we pass the output from babel loader to react-hot loader
+    { test: /\.jsx?$/, exclude: /node_modules/, 
+        loaders: ['react-hot-loader/webpack', 'babel?' + JSON.stringify({presets: ['react', 'es2015']})]
     },
     ],
   },
