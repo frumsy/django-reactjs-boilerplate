@@ -56,3 +56,6 @@ https://github.com/owais/django-webpack-loader
 https://github.com/naomigrace/django-react-webpack
 <br/>
 https://github.com/mbrochh/django-reactjs-boilerplate
+<br/>
+NOTE:
+    If you're using this repo as a template and are going to delete the .git and rename the repo it may mess up the virtual-environment. To make sure you're virtual-env works you should delete and rename everything before creating the virtual-env wth "virtualenv environment".
