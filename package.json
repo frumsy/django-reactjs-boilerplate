@@ -4,8 +4,9 @@
   "description": "django backend, front end react",
   "main": "index.js",
   "dependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react": "^16.5.2",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.5.2"
   },
   "devDependencies": {
     "babel": "^6.5.2",
