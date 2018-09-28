@@ -16,8 +16,8 @@ react-hot-loader is working.
 ### Installing
 Make sure you already installed virtual environment for django in your computer.
 ```
-git clone https://github.com/frumsy/liam-pcb.git
-cd liam-pcb
+git clone https://github.com/frumsy/django-reactjs-boilerplate.git
+cd django-reactjs-boilerplate
 virtualenv environment
 source environment/bin/activate
 pip install -r requirements.txt
