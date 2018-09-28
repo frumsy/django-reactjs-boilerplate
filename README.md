@@ -22,9 +22,24 @@ virtualenv environment
 source environment/bin/activate
 pip install -r requirements.txt
 npm install
+#Your environment is now setup
+
+#you may want to make migration before running the server
+python manage.py makemigrations
+
+#and don't forget to actually migrate
+python manage.py migrate
+
+#now to run the actual server do:
 python manage.py runserver
 
+#To get wolfpack up and running with hot reload we need to:
 # open another terminal
+
+# activate your virtualenv
+source environment/bin/activate
+
+#run the node server
 node server.js
 
 open to your browser: 127.0.0.1:8000/
